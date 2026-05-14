@@ -109,29 +109,41 @@ export class PortfolioService {
   ]);
 
   readonly skills = signal<Skill[]>([
+    // BACK-END & DB
+    { name: 'Node.js (TypeScript)', category: 'Back-end' },
     { name: 'PHP', category: 'Back-end' },
+    { name: 'PostgreSQL', category: 'Back-end' },
     { name: 'MySQL', category: 'Back-end' },
-    { name: 'WordPress', category: 'CMS' },
+    { name: 'Prisma ORM', category: 'Back-end' },
+    { name: 'RESTful API Design', category: 'Back-end' },
 
-    { name: 'JavaScript (ES6+)', category: 'Front-end' },
-    { name: 'TypeScript', category: 'Front-end' },
-    { name: 'React', category: 'Front-end' },
+    // FRONT-END
     { name: 'Angular', category: 'Front-end' },
+    { name: 'React', category: 'Front-end' },
+    { name: 'TypeScript', category: 'Front-end' },
+    { name: 'JavaScript (ES6+)', category: 'Front-end' },
     { name: 'Tailwind CSS', category: 'Front-end' },
-    { name: 'jQuery', category: 'Front-end' },
     { name: 'HTML5/CSS/SCSS', category: 'Front-end' },
     { name: 'Timber/Twig', category: 'Front-end' },
+    { name: 'jQuery', category: 'Front-end' },
 
+    // CMS & PLATFORMS
+    { name: 'WordPress', category: 'CMS' },
     { name: 'Firebase', category: 'Tools' },
+
+    // INFRASTRUCTURE & TOOLS
+    { name: 'Cloudflare (DNS & Edge)', category: 'Tools' },
     { name: 'Google Cloud (GCS)', category: 'Tools' },
     { name: 'AWS', category: 'Tools' },
+    { name: 'Linux/Ubuntu Server', category: 'Tools' },
 
+    // INTEGRATIONS & ANALYTICS
+    { name: 'Stripe API (Payments)', category: 'Tools' },
     { name: 'Salesforce API', category: 'Tools' },
-    { name: 'Stripe API', category: 'Tools' },
     { name: 'HubSpot API', category: 'Tools' },
-    { name: 'Google API', category: 'Tools' },
+    { name: 'Google Maps/Calendar API', category: 'Tools' },
     { name: 'Google Analytics/GTM', category: 'Tools' },
-  ]);
+]);
 
   readonly skillGroups = computed(() => {
     const groups = {
